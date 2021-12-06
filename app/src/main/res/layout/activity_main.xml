@@ -10,11 +10,12 @@
 <!-- Include other widget or layout tags here. These are considered
         "child views" or "children" of the linear layout -->
     <TextView
+        android:id="@+id/result_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="@string/dice_text"
-        android:textSize="30sp"
-        android:layout_gravity="center"/>
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/roll_button"

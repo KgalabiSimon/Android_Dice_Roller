@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_vertical"
@@ -9,20 +11,29 @@
 
 <!-- Include other widget or layout tags here. These are considered
         "child views" or "children" of the linear layout -->
-    <TextView
+<!--    <TextView
         android:id="@+id/result_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/dice_text"
-        android:textSize="30sp" />
+        android:textSize="30sp" /> -->
+
+
+    <ImageView
+        android:id="@+id/dice_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/dice_1"
+        tools:ignore="ImageContrastCheck" />
 
     <Button
         android:id="@+id/roll_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_roll"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:text="@string/button_roll" />
 
 
 </LinearLayout>
